@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, dataset, or model, please cite the paper below."
+title: "Weak-to-Strong Elicitation via Mismatched Wrong Drafts"
+authors:
+  - family-names: Deng
+    given-names: Wei
+repository-code: "https://github.com/weiddeng/mismatched-wrong-drafts"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "Weak-to-Strong Elicitation via Mismatched Wrong Drafts"
+  authors:
+    - family-names: Deng
+      given-names: Wei
+  year: 2026
+  url: "https://arxiv.org/abs/2605.17314"
+  identifiers:
+    - type: other
+      value: "arXiv:2605.17314"

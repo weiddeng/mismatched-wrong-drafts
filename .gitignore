@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Local artifacts — regenerate with the scripts; never commit large blobs.
+data/                     # prepared datasets (build_datasets.py / build_mismatch.py)
+outputs/                  # training checkpoints + logs
+drafts*.json              # Qwen draft dumps (generate_drafts.py)
+*.safetensors
+*.arrow
+*.bin
+*.log
+huggingface_cache/
+hf_model/

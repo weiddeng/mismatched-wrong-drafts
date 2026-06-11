@@ -1,0 +1,24 @@
+# Tested, reproducible install: scripts/runpod_setup.sh (canonical installer).
+# Python 3.10–3.12. A CUDA GPU is required for training and for vLLM inference.
+#
+# torch is intentionally unpinned here — it is pulled in (with the correct CUDA
+# build) by unsloth / vllm. Install those first on a fresh machine.
+
+# --- RL training: Dr.GRPO via TRL + Unsloth (LoRA) ---
+unsloth
+trl>=0.15
+peft==0.19.1
+transformers>=4.44
+datasets>=2.20
+accelerate
+
+# --- Inference / generation (draft sampling + evaluation) ---
+# vLLM 0.18.x is required: 0.19+ has a torch.compile regression with Unsloth.
+# 0.18.1 is the tested version on B200/H200.
+vllm>=0.18,<0.19
+
+# --- Answer verification (symbolic + string fallback) ---
+math-verify
+
+# --- Model/dataset hub I/O ---
+huggingface_hub
