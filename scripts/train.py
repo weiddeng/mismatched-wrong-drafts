@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-seq-length", type=int, default=7168)
     p.add_argument("--lora-rank", type=int, default=16)
     p.add_argument("--max-steps", type=int, default=2)
-    p.add_argument("--gradient-accumulation-steps", type=int, default=8)
+    p.add_argument("--gradient-accumulation-steps", type=int, default=4)
     p.add_argument("--max-completion-length", type=int, default=2048)
     p.add_argument("--num-generations", type=int, default=16,
                    help="Number of rollouts per prompt (default 16).")
