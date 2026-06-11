@@ -43,7 +43,7 @@ def parse_args() -> argparse.Namespace:
                    help="Base learner model (e.g. mistralai/Mathstral-7B-v0.1).")
     p.add_argument("--dataset-path", type=str, default="data/math_path_b")
     p.add_argument("--output-dir", type=str, default="outputs/dry_run")
-    p.add_argument("--max-seq-length", type=int, default=8192)
+    p.add_argument("--max-seq-length", type=int, default=7168)
     p.add_argument("--lora-rank", type=int, default=16)
     p.add_argument("--max-steps", type=int, default=2)
     p.add_argument("--gradient-accumulation-steps", type=int, default=8)
@@ -53,7 +53,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--learning-rate", type=float, default=5e-6)
     p.add_argument("--beta", type=float, default=0.04)
     p.add_argument("--lr-scheduler-type", type=str, default="cosine")
-    p.add_argument("--gpu-mem-util", type=float, default=0.6)
+    p.add_argument("--gpu-mem-util", type=float, default=0.5)
     p.add_argument("--correction-bonus", type=float, default=1.0,
                    help="Bonus reward when model corrects a wrong/null draft.")
     p.add_argument("--copy-penalty", type=float, default=0.0,
