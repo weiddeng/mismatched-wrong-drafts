@@ -46,8 +46,6 @@ scripts/
   runpod_setup.sh            # fresh-GPU-pod setup (pins vllm 0.18.x, drops bad flashinfer-cubin)
 ```
 
-Run scripts from the **repository root** (`python scripts/train.py ...`).
-
 ## Installation
 
 A CUDA GPU is required. The tested, reproducible installer is `scripts/runpod_setup.sh`:
