@@ -104,8 +104,7 @@ python scripts/generate_drafts.py \
     --output-dir outputs/drafts_qwen25_math_1.5b
 ```
 
-This loads the full MATH dataset (12,500 problems), labels the MATH-500 split by
-problem-text match, and writes `drafts.json` with per-sample correctness flags.
+This loads the full MATH dataset (12,500 problems), generates drafts and writes `drafts.json`.
 
 ### 2. Build the training datasets
 
