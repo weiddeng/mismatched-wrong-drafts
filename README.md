@@ -127,7 +127,7 @@ python scripts/build_mismatch.py --draft-type correct \
 
 The universe is the 8,888 Level 3–5 problems in MATH minus MATH-500.
 
-To reproduce the **exact** published row order and mismatch pairings, download the prepared dataset directly from [`hugruby/mismatched-wrong-drafts`](https://huggingface.co/datasets/hugruby/mismatched-wrong-drafts) — every config already has them baked in, so no rebuilding is needed.
+To reproduce the **exact** published row order and mismatch pairings, download the prepared dataset directly from [`hugruby/mismatched-wrong-drafts`](https://huggingface.co/datasets/hugruby/mismatched-wrong-drafts).
 
 ### 3. Train (Dr. GRPO + LoRA, single GPU)
 
@@ -148,8 +148,7 @@ python scripts/train.py \
     --save-steps 50 --gpu-mem-util 0.5
 ```
 
-The headline checkpoint is **`checkpoint-2000`** (the released adapter); use
-`--smoke` for a 2-step sanity run first. `--lora-rank` (16) and `--num-generations`
+The headline checkpoint is **`checkpoint-2000`** (the released adapter). `--lora-rank` (16) and `--num-generations`
 (16) are the defaults. For the other variants, swap `--dataset-path` /
 `--output-dir` to the matching config.
 
