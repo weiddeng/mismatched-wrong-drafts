@@ -27,7 +27,7 @@ draft slot is the literal string `N/A`).
 
   <sub>† The remaining 2×2 cell — *matched-correct* — is uninteresting and omitted.</sub>
 
-- 🤗 **Dataset:** [`hugruby/mismatched-wrong-drafts`](https://huggingface.co/datasets/hugruby/mismatched-wrong-drafts): four configs (`mismatched_wrong`, `no_draft`, `matched_wrong`, `mismatched_correct`), 8,888 Level 3–5 MATH problems each, MATH-500 held out. Also ships `drafts_qwen25_math_1.5b.json`, the raw 32-draft-per-problem source the configs are built from.
+- 🤗 **Dataset:** [`hugruby/mismatched-wrong-drafts`](https://huggingface.co/datasets/hugruby/mismatched-wrong-drafts): four configs (`mismatched_wrong`, `no_draft`, `matched_wrong`, `mismatched_correct`), 8,888 Level 3–5 MATH problems each, MATH-500 held out. Also ships [`drafts_qwen25_math_1.5b.json`](https://huggingface.co/datasets/hugruby/mismatched-wrong-drafts/blob/main/drafts_qwen25_math_1.5b.json), the raw 32-draft-per-problem source the configs are built from.
 
 ## Repository layout
 
